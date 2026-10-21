@@ -1,0 +1,18 @@
+# 运行时本地数据：包含余额、疲劳、游戏记录，绝不入库
+config.json
+state.json
+*.log
+*.tmp
+
+# 本地密钥和凭据
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+
+# 依赖与系统文件
+node_modules/
+.DS_Store
+Thumbs.db

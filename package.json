@@ -1,0 +1,31 @@
+{
+  "name": "dsh-moyu",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "偷吃大白饭：让 DSH 的 agent 干活时摸鱼、看 B 站/贴吧，累了拉你玩小游戏，输了扣余额。",
+  "keywords": ["dsh", "dsh-plugin", "deepseek-harness", "moyu", "game", "wallet"],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  },
+  "license": "MIT"
+}

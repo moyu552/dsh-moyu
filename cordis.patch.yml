@@ -1,0 +1,6 @@
+# dsh-moyu —— 偷吃大白饭(摸鱼)插件
+# 插入 Host 插件行；Client 半边由 package.json 的 dsh.client 声明自动加载。
+- insert:
+    - id: dsh-moyu
+      name: dsh-moyu
+      config: {}
